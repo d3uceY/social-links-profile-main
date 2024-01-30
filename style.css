@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%)
+}
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    /* border: 1px solid; */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    background: var(--Off-Black);
+}
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-card {
+    background: var(--Dark-Grey);
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.avatar-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-bottom: 25px;
+}
+
+.avatar-image {
+    width: 100%;
+}
+
+.name {
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 11px;
+}
+
+.location {
+    color: var(--Green);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.caption {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background: var(--Grey);
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all ease-in-out 250ms;
+}
+
+.links:hover {
+    color: black;
+    background: var(--Green);
+}
+
+.links:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.attribution {
+    text-align: center;
+    color: white;
+    max-width: 350px;
+    margin: 0px auto;
+}
+
+.attribution a{
+    color: var(--Green);
+}
